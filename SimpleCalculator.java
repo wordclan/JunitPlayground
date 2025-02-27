@@ -2,20 +2,22 @@ package at.htlle.pos;
 
 public class SimpleCalculator {
 
-    // +
-    public long add(int num1, int num2){
-        return (long)num1 +num2;
-
+    // Addition Method
+    public long add(int num1, int num2) {
+        return (long) num1 + num2;
     }
 
-    // -
-    // *
-    // /
-
-    public float div(int dividend, int divisor){
-        if (divisor == 0)throw new ArithmeticException("Potential division by zero");
+    // Division Method
+    public float div(int dividend, int divisor) {
+        if (divisor == 0) throw new ArithmeticException("Potential Division by zero");
         return (float) dividend / divisor;
     }
 
+    public long sub(int num1, int num2) {
+        return (long) num1 - num2;
+    }
 
+    public long mul(int num1, int num2) {
+        return (long) num1 * num2;
+    }
 }
